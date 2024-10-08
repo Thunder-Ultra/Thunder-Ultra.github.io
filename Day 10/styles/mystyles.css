@@ -1,0 +1,65 @@
+body {
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+    background-color: rgb(240, 228, 252);
+}
+div#header {
+    padding:20px;
+}
+h1 {
+    color:rgb(110, 5, 247);
+    font-size: 45px;
+}
+img {
+    width: 180px;
+}
+div#main-content {
+    text-align: left;
+    margin: 50px auto 20px;
+    padding: 20px 20px;
+    background-color: rgb(134, 42, 255);
+    border-radius: 9px;
+    box-shadow: 2px 2px 4px rgba(0,0,0, 0.2);
+    width: 600px;
+}
+h2 {
+    font-size: 20px;
+    color: white;
+}
+p {
+    font-size: 14px;
+    color: white;
+}
+h1, h2, .bold {
+    font-weight: 900;
+}
+p.highlight {
+    border-left: 3px solid yellow;
+    padding-left: 10px;
+    color: yellow;
+    /* background-color: rgba(251, 255, 0, 0.377);
+    box-shadow: inset -100px 0px 40px rgba(134, 42, 255, 1); */
+}
+p.subtopic {
+    padding-left: 13px;
+}
+a {
+    color: rgb(67, 2, 151);
+    background-color: rgb(233, 233, 98);
+    text-decoration: none;
+    padding: 4px 4px;
+    border-radius: 5px;
+}
+div#footer {
+    padding-bottom: 50px;
+}
+div#footer a {
+    display: inline-block;
+    padding: 15px;
+    color: rgb(58, 11, 102);
+    border-radius: 8px;
+    background-color: rgb(255, 187, 0);
+}
+#footer p {
+    color: rgb(139, 115, 158)
+}
