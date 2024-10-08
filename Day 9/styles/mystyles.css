@@ -37,6 +37,8 @@ p.highlight {
     border-left: 3px solid yellow;
     padding-left: 10px;
     color: yellow;
+    /* background-color: rgba(251, 255, 0, 0.377);
+    box-shadow: inset -100px 0px 40px rgba(134, 42, 255, 1); */
 }
 p.subtopic {
     padding-left: 13px;

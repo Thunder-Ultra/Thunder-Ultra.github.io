@@ -1,65 +1,67 @@
 body {
-    font-family: "Roboto",sans-serif;
-    text-align: center;
-    background-color: rgb(240, 228, 252);
-}
-div#header {
-    padding:20px;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(244, 234, 255);
 }
 h1 {
-    color:rgb(110, 5, 247);
-    font-size: 45px;
+  font-size: 52px;
+  color: rgb(88, 49, 196);
 }
-img {
-    width: 180px;
+header {
+  text-align: center;
+  padding: 32px;
 }
-div#main-content {
-    text-align: left;
-    margin: 50px auto 20px;
-    padding: 20px 20px;
-    background-color: rgb(134, 42, 255);
-    border-radius: 9px;
-    box-shadow: 2px 2px 4px rgba(0,0,0, 0.2);
-    width: 600px;
+header img {
+  width: 300px;
 }
-h2 {
-    font-size: 20px;
-    color: white;
+main {
+  background-color: rgb(122, 74, 218);
+  padding: 32px;
+  margin: 32px auto;
+  width: 700px;
+  border-radius: 8px;
+  color: rgb(248, 241, 255);
 }
-p {
-    font-size: 14px;
-    color: white;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-h1, h2, .bold {
-    font-weight: 900;
-}
-p.highlight {
-    border-left: 3px solid yellow;
-    padding-left: 10px;
-    color: yellow;
-    /* background-color: rgba(251, 255, 0, 0.377);
-    box-shadow: inset -100px 0px 40px rgba(134, 42, 255, 1); */
-}
-p.subtopic {
-    padding-left: 13px;
+li {
+  margin: 14px 0;
+  padding-left: 10px;
+  border-left: 5px solid transparent;
 }
 a {
-    color: rgb(67, 2, 151);
-    background-color: rgb(233, 233, 98);
-    text-decoration: none;
-    padding: 4px 4px;
-    border-radius: 5px;
+  text-decoration: none;
+  color: rgb(36, 3, 102);
+  background-color: rgb(255, 237, 177);
+  padding: 2px 6px;
+  border-radius: 4px;
 }
-div#footer {
-    padding-bottom: 50px;
+footer {
+  text-align: center;
+  margin-bottom: 100px;
 }
-div#footer a {
-    display: inline-block;
-    padding: 15px;
-    color: rgb(58, 11, 102);
-    border-radius: 8px;
-    background-color: rgb(255, 187, 0);
+footer a {
+  padding: 12px 20px;
+  border-radius: 8px;
+  background-color: rgb(250, 201, 39);
+  color: rgb(66, 51, 4);
 }
-#footer p {
-    color: rgb(139, 115, 158)
+footer p {
+  color: rgb(131, 113, 149);
+  margin-top: 30px;
+}
+a:hover,
+a:active {
+  background-color: rgb(250, 201, 39);
+}
+footer a:hover,
+footer a:active {
+  background-color: rgb(255, 186, 58);
+}
+.extra-important {
+  color: rgb(255, 237, 177);
+  border-left: 5px solid rgb(247, 209, 85);
+  border-color: rgb(247, 209, 85);
 }
