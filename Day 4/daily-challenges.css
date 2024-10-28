@@ -1,0 +1,23 @@
+/* Here we can list all CSS Style Rules */
+h1 {
+    font-family: 'Oswald', sans-serif;
+    color: rgb(41, 197, 250);
+    text-align: center;
+  }
+p {
+    font-family: 'Fira Sans', sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+a {
+    color: rgb(47, 118, 205);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+#todays-challenge {
+    color: rgb(170, 96, 83);
+    font-weight: bold;
+    font-size: 52px;
+}
