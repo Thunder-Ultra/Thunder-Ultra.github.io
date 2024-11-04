@@ -1,0 +1,28 @@
+/* Here we can list all CSS Style Rules */
+img {
+    width:  200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 5px solid black;
+    margin-top: -120px;
+}
+h1 {
+    color:black;
+}
+#todays-challenge {
+    color: rgb(106, 100, 86);
+    font-weight: bold;
+    font-size: 52px;
+}
+span {
+    color: rgb(16, 140, 157);
+}
+main {
+    width: 850px;
+    background-color: rgb(155, 225, 228);
+    border: 5px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 160px auto 80px;
+    box-shadow: 1px 1px 8px rgba(0,0,0, 0.4);
+}
