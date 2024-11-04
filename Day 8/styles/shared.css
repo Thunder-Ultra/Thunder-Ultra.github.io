@@ -1,0 +1,23 @@
+/* Here we can list all CSS Style Rules */
+body {
+    text-align: center;
+    background-color: rgb(238, 255, 254);
+    color: rgb(83,75,75);
+    margin: 50px;
+}
+h1 {
+    font-family: 'Oswald', sans-serif;
+    color: rgb(41, 197, 250);
+}
+p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 24px;
+}
+a {
+    font-family: 'Fira Sans', sans-serif;
+    color: rgb(47, 118, 205);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
