@@ -1,0 +1,137 @@
+#hero {
+    height: 800px;
+    background-image: url("../images/travel.jpg");
+    background-position: center;
+    background-size:cover;
+}
+
+main {
+    text-align: center;
+}
+
+#hero-content {
+    padding:40px 0;
+    margin: 0px auto;
+    background-color: rgb(51, 47, 47, 0.8);
+    width: 660px;
+    /* height: 150px; */
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgb( 68,67, 67);
+    position: relative;
+    top: 200px;
+}
+#hero-content h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+
+#hero-content p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+#hero-content a {
+    color: black;
+    /* display: inline-block; */
+    background-color: rgb(255, 251, 0);
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+}
+
+#hero-content a:hover {
+    background-color: rgb(224, 221, 8);
+}
+
+
+/* MY IDEA ON HIGHLIGHTS SECTION */
+/* 
+#highlights {
+    background-color: rgb(170, 246, 252);
+    padding:30px 0 20px;
+}
+#highlights h1 {
+    color: rgb(0, 58, 58);
+    margin: 0;
+    font-size: 40px;
+}
+
+#highlights ul {
+    list-style: none;
+    padding: 0;
+}
+
+#highlights>ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+li img {
+    width: 500px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 5px 3px 6px rgb(0,0,0, 0.5);
+}
+
+#highlights li {
+    padding-top: 10px;
+    font-weight: bold;
+    color: rgb(143, 143, 143)
+}
+
+.country {
+    color: rgb(0, 151, 93);
+} */
+
+#highlights h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(59, 65, 64);
+    margin: 24px 0;
+}
+#highlights ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+#destinations {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-bottom: 40px; 
+    text-transform: uppercase;
+}
+
+.destination {
+    margin: 0 20px;
+}
+
+.destination img {
+    height: 200px;
+    width: 100% ;
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+    border-radius: 10px;
+    object-fit:cover;
+}
+
+.destination p{
+    text-align: center;
+    font-size: 18px;
+    color: rgb(124, 123, 123) ;
+    margin: 20px 0;
+}
+
+.destination strong {
+    color: rgb(0, 160, 117);
+}
