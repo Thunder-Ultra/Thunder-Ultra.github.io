@@ -92,6 +92,11 @@ li img {
     color: rgb(0, 151, 93);
 } */
 
+#highlights {
+    padding: 24px;
+    background: linear-gradient(0deg, rgb(227,255,253), rgb(202, 243, 240));
+}
+
 #highlights h2 {
     text-transform: uppercase;
     text-align: center;
@@ -115,6 +120,7 @@ li img {
 }
 
 .destination {
+    width: 500px;
     margin: 0 20px;
 }
 
@@ -136,3 +142,4 @@ li img {
 .destination strong {
     color: rgb(0, 160, 117);
 }
+
