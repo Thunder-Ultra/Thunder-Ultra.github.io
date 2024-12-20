@@ -14,6 +14,31 @@
         <input type="text" name="user-name" id="username">
         <label for="useremail">Your Email</label>
         <input type="email" name="user-email" id="useremail">
+        <label for="userage">Your Age</label>
+        <input type="number" step=1 name="user-age" id="userage">
+        <label for="userpassword">User Password</label>
+        <input type="password" name="user-password" id="userpassword">
+        <label for="userbirthdate">Your Birthdate</label>
+        <input type="date" name="user-birthdate" id="userbirthdate">
+        
+        <hr>
+
+        <h2>How should we verify you?</h2>
+        <div class="form-control-inline">
+            <input type="radio" name="verify" id="verify-text-message" value="verify-text-message">
+            <label>Via test message (SMS)</label>
+        </div>
+        
+        <div class="form-control-inline">
+            <input type="radio" name="verify" id="verify-phone" value="verify-phone">
+            <label>Via a phone call</label>
+        </div>
+        
+        <div class="form-control-inline">
+            <input type="radio" name="verify" id="verify-email" value="verify-email">
+            <label>Via an email</label>
+        </div>
+        
         <button>SUBMIT</button>
     </form>
 </body>

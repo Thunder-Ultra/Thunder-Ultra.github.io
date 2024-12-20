@@ -33,6 +33,15 @@ input:focus {
     border-color: rgb(32, 5, 63);
 }
 
+.form-control-inline {
+    display: flex;
+    /* align-items: center; */
+}
+
+.form-control-inline input {
+    width: auto;
+}
+
 button {
     display:block;
     font: inherit;
