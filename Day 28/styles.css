@@ -80,8 +80,13 @@ button:hover {
     border-color: rgb(52,14,95);
 }
 
-@media (max-width: 30rem) {
+@media (max-width: 34rem) {
     form {
         width: 90%;
+    }
+}
+@media (max-width: 18rem) {
+    form {
+        width: 18rem;
     }
 }
