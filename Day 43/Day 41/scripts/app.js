@@ -1,20 +1,6 @@
-let selectedPlayerId = 0;
-const players= [
-    {
-        name:'',
-        symbol:'X'
-    },
-    {
-        name:'',
-        symbol:'O'
-    }
-]
-
 // Select the backdrop and modal Element
 const backdropElement = document.getElementById("backdrop")
 const playerConfigOverlayElement = document.getElementById("config-overlay")
-const formElement = document.querySelector("form")
-const configErrorElement = document.getElementById("config-errors")
 
 
 //  SELECT THE BUTTONS
@@ -29,5 +15,3 @@ player2EditBtnElement.addEventListener('click', openPlayerConfig);
 
 closeConfigBtnElement.addEventListener('click', closePlayerConfig);
 backdropElement.addEventListener('click', closePlayerConfig);
-
-formElement.addEventListener('submit', savePlayerConfig)
