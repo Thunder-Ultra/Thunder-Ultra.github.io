@@ -82,7 +82,9 @@ function checkForGameOver(selectedRow,selectedColumn) {
         }
     }
     if (winner){
-        for (let tile=selectedRow; tile<selectedRow+3; tile++){
+        console.log("selecter row "+selectedRow)
+        console.log("selecter col "+selectedColumn)
+        for (let tile=selectedRow*3; tile<selectedRow*3+3; tile++){
             gameBoardElement.children[tile].classList.add("winner-tile");
         }
         return 1;
