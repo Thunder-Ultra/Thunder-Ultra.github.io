@@ -1,4 +1,4 @@
-const gameData = [
+let gameData = [
     [0,0,0],
     [0,0,0],
     [0,0,0]
@@ -35,6 +35,7 @@ const startGameErrorsElement = document.getElementById("start-game-errors");
 const activePlayerNameElement = document.getElementById("active-player-name")
 const activeGameElement = document.getElementById("active-game");
 
+const noTilesLeftElement = document.getElementById("no-possible-tiles")
 const gameOverElement = document.getElementById("game-over")
 const winnerNameElement = document.getElementById("winner-name")
 const turnDisplayElement = document.getElementById("turn-display")

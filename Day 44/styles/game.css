@@ -5,6 +5,17 @@
     color: red;
 }
 
+#no-possible-tiles {
+    display: none;
+    color: red;
+    background-color: rgb(250, 166, 166);
+    border: 2px solid red;
+    padding: 1rem;
+    border-radius: 10px;
+    /* width: fit-content; */
+    margin: 3px auto;
+}
+
 #active-game {
     text-align: center;
     margin: 2rem 0 5rem 0;
@@ -78,8 +89,14 @@
 }
 
 
-#game-board .disabled {
+#game-board li.disabled {
     background-color: rgb(112, 13, 204);
     color: white;
     cursor: default;
+}
+
+#game-board li.winner-tile{
+    /* text-decoration: line-through; */
+    /* color: green; */
+    background-color: rgb(32, 194, 64);
 }

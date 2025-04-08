@@ -5,6 +5,21 @@ function startNewGame(){
         startGameErrorsElement.style.display="block";
         return;
     }
+
+    gameData = [
+        [0,0,0],
+        [0,0,0],
+        [0,0,0]
+    ]
+
+    for (const children of gameBoardElement.children){
+        children.addEventListener('click',tileClicked);
+        children.className=''
+        children.textContent='';
+    }
+    noTilesLeftElement.style.display='none';
+    gameOverElement.style.display='none';
+    turnDisplayElement.style.display='block';
     activePlayerNameElement.textContent=players[activePlayer].name
     startGameErrorsElement.style.display= "none";
     activeGameElement.style.display = "block";
@@ -44,6 +59,20 @@ function tileClicked(event){
 
     gameData[selectedRow][selectedColumn] = activePlayer+1;
 
+    console.log("game over check will commence!")
+    if (checkForGameOver(selectedRow,selectedColumn)){
+        gameOver();
+        return;
+    }
+    console.log("game over check done!")
+    if (!checkForFreeTiles()){
+        return;
+    }
+    console.log("free tile check done!")
+    switchPlayer();
+}
+
+function checkForGameOver(selectedRow,selectedColumn) {
     // first check the selected row
     let winner=1
     for (let col=0; col<3; col++){
@@ -53,7 +82,10 @@ function tileClicked(event){
         }
     }
     if (winner){
-        gameOver();
+        for (let tile=selectedRow; tile<selectedRow+3; tile++){
+            gameBoardElement.children[tile].classList.add("winner-tile");
+        }
+        return 1;
     }
 
     // second check the selected row
@@ -65,7 +97,10 @@ function tileClicked(event){
         }
     }
     if (winner){
-        gameOver();
+        for (let tile=selectedColumn; tile<9; tile+=3){
+            gameBoardElement.children[tile].classList.add("winner-tile");
+        }
+        return 1;
     }
 
     // Then check if the diagonal needs to be checked
@@ -78,7 +113,10 @@ function tileClicked(event){
         }
     }
     if (winner){
-        gameOver();
+        for (let row=0, col=0; row < 3, col<3; row++, col++){
+            gameBoardElement.children[row*3+col].classList.add('winner-tile')
+        }
+        return 1;
     }
     // 02 11 20 
     winner=1
@@ -88,15 +126,27 @@ function tileClicked(event){
             break;
         }
     }
-    if (winner){
-        gameOver();
+    if (winner){for (let row=0, col=2; row < 3, col > -1; row++, col--){
+        gameBoardElement.children[row*3+col].classList.add('winner-tile')
     }
-    
+        return 1;
+    }
 
+    return 0;
+}
 
-    
-    switchPlayer();
-
-
-
+function checkForFreeTiles() {
+    for (let i=0; i<3; i++){
+        for (let j=0; j<3; j++){
+            if (!gameData[i][j]){
+                return 1;
+            }
+        }
+    }
+    turnDisplayElement.style.display="none";
+    for (let i=0; i<9; i++){
+        gameBoardElement.children[i].removeEventListener('click',tileClicked);
+    }
+    noTilesLeftElement.style.display='block'
+    return 0;
 }
