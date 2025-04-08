@@ -19,11 +19,12 @@
 #active-game {
     text-align: center;
     margin: 2rem 0 5rem 0;
-    display: none;
+    /* display: none; */
 }
 
 #game-over {
     width: 90%;
+    box-sizing:border-box;
     max-width: 40rem;
     margin: auto;
     padding: 1rem 2rem;
@@ -31,7 +32,7 @@
     color: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    display: none;
+    /* display: none; */
 }
 
 /* #winner-status {
