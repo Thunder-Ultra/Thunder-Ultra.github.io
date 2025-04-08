@@ -1,10 +1,14 @@
 
-/* My Trial */
+#start-game-errors {
+    display: none;
+    text-transform: uppercase;
+    color: red;
+}
 
 #active-game {
     text-align: center;
     margin: 2rem 0 5rem 0;
-    /* display: none; */
+    display: none;
 }
 
 #game-over {
