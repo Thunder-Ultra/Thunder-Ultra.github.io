@@ -12,7 +12,7 @@
     border: 2px solid red;
     padding: 1rem;
     border-radius: 10px;
-    /* width: fit-content; */
+    width: fit-content;
     margin: 3px auto;
 }
 
