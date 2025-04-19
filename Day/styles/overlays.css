@@ -6,9 +6,10 @@
     background-color: rgb(249, 224, 255);
     border-radius: 6px;
     padding: 1rem;
+    box-sizing: border-box;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     /* text-align: center; */
-    display: none;
+    /* display: none; */
 }
 
 #backdrop {

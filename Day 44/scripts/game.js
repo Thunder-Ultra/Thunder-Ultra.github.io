@@ -59,16 +59,13 @@ function tileClicked(event){
 
     gameData[selectedRow][selectedColumn] = activePlayer+1;
 
-    console.log("game over check will commence!")
     if (checkForGameOver(selectedRow,selectedColumn)){
         gameOver();
         return;
     }
-    console.log("game over check done!")
     if (!checkForFreeTiles()){
         return;
     }
-    console.log("free tile check done!")
     switchPlayer();
 }
 
@@ -76,14 +73,12 @@ function checkForGameOver(selectedRow,selectedColumn) {
     // first check the selected row
     let winner=1
     for (let col=0; col<3; col++){
-        if (gameData[selectedRow][col]!=activePlayer+1){
+        if (gameData[selectedRow][col]!=activePlayer+1){  // Check for all tiles in same row
             winner=0;
             break;
         }
     }
     if (winner){
-        console.log("selecter row "+selectedRow)
-        console.log("selecter col "+selectedColumn)
         for (let tile=selectedRow*3; tile<selectedRow*3+3; tile++){
             gameBoardElement.children[tile].classList.add("winner-tile");
         }
