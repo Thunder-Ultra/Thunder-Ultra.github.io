@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Gobin",
+        "address": "Napaam",
+        "cuisine": "Japanese",
+        "website": "https://www.gs.com",
+        "description": "y"
+    },
+    {
+        "name": "GS",
+        "address": "Tezpur University",
+        "cuisine": "Indian",
+        "website": "https://www.na.com/",
+        "description": "a bit coslty"
+    },
+    {
+        "name": "VL",
+        "address": "Napaam",
+        "cuisine": "Korean",
+        "website": "https://www.vl.com",
+        "description": "smokers"
+    },
+    {
+        "name": "Varsity",
+        "address": "Napaam",
+        "cuisine": "Chinese",
+        "website": "https://www.varsity.com",
+        "description": "Yep! Quite affordable and quite elegant!"
+    },
+    {
+        "name": "Seleni",
+        "address": "Napaam",
+        "cuisine": "Japanese",
+        "website": "https://www.seleni.com",
+        "description": "Yep! Quite affordable and beautifull!"
+    },
+    {
+        "name": "Tasty Point",
+        "address": "Tezpur",
+        "cuisine": "Indian",
+        "website": "https://www.tastypoint.com",
+        "description": "Nice Place!"
+    }
+]

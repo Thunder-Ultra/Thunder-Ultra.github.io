@@ -1,0 +1,66 @@
+[
+    {
+        "id": "r1",
+        "name": "Gobin",
+        "address": "Napaam",
+        "cuisine": "Japanese",
+        "website": "https://www.gs.com",
+        "description": "y"
+    },
+    {
+        "id": "r2",
+        "name": "GS",
+        "address": "Tezpur University",
+        "cuisine": "Indian",
+        "website": "https://www.na.com/",
+        "description": "a bit coslty"
+    },
+    {
+        "id": "r3",
+        "name": "VL",
+        "address": "Napaam",
+        "cuisine": "Korean",
+        "website": "https://www.vl.com",
+        "description": "smokers"
+    },
+    {
+        "id": "r4",
+        "name": "Varsity",
+        "address": "Napaam",
+        "cuisine": "Chinese",
+        "website": "https://www.varsity.com",
+        "description": "Yep! Quite affordable and quite elegant!"
+    },
+    {
+        "id": "r5",
+        "name": "Seleni",
+        "address": "Napaam",
+        "cuisine": "Japanese",
+        "website": "https://www.seleni.com",
+        "description": "Yep! Quite affordable and beautifull!"
+    },
+    {
+        "id": "r6",
+        "name": "Tasty Point",
+        "address": "Tezpur",
+        "cuisine": "Indian",
+        "website": "https://www.tastypoint.com",
+        "description": "Nice Place!"
+    },
+    {
+        "name": "Chillies",
+        "address": "Gohaigaon",
+        "cuisine": "Indian",
+        "website": "https://www.chillies.com/",
+        "description": "It's in Morigaon, my Hometown!",
+        "id": "ad0f6de4-dcee-4165-b3c1-25034a783e7e"
+    },
+    {
+        "name": "Arun",
+        "address": "Maya Bazaar",
+        "cuisine": "Indian",
+        "website": "https://www.arun.com",
+        "description": "Yes!",
+        "id": "8032acc2-4653-47ac-a151-3ba1486de1fb"
+    }
+]

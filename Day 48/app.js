@@ -1,25 +1,34 @@
-const http = require("http");
+const fs = require('fs');
+const path = require('path');
+
+const express = require("express");
 
 
+const app = express();
 
-// request is ref to the incoming request
-// response is ref to the outgoing response
-function handleRequest(request, response) {
-  // console.log(request.url); // log the request URL to the console
-  
-  if (request.url === '/currenttime') {
-    response.statusCode = 200; // HTTP status code meaning OK
-    response.end( "<h1>" + new Date().toISOString() + "</h1>" ); // end the response with HTML content
+app.use(express.urlencoded({extended: false}))
 
-  } else if (request.url === "/") {
-    response.statusCode = 200; // HTTP status code meaning OK
-    response.end("<h1>Hello World</h1>"); // end the response with HTML content
+app.get("/currenttime", function(req,res) {
+  res.send("<h1>" + new Date().toISOString() + "</h1>");
+}) // localhost:3000/currenttime
 
-  }
+app.get("/", function(req,res) {
+  res.send("<form method=POST action='/store-user'><label>Enter Name</label><input type=text name=username><button>Submit</button></submit></form>");
+}) // localhost:3000/
 
-}
+app.post("/store-user", function(req,res){
+  let userName = req.body.username;
 
+  const filePath = path.join(__dirname, 'data', 'users.json');
 
-const server = http.createServer(handleRequest);
+  const fileData = fs.readFileSync(filePath);
+  const existingUsers = JSON.parse(fileData);
 
-server.listen(3000);
+  existingUsers.push(userName);
+
+  fs.writeFileSync(filePath, JSON.stringify(existingUsers));
+
+  res.send("<h1>Username Stored!</h1>")
+})
+
+app.listen(3000);
